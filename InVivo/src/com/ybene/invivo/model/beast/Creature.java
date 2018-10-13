@@ -1,7 +1,7 @@
-package com.ybene.invivo.model;
+package com.ybene.invivo.model.beast;
 
 /**
- * Class to manage player's creature
+ * Class to define a creature
  * @author Yohann BENETREAULT
  * @version 0.0a
  * 
@@ -12,20 +12,20 @@ public class Creature {
 
 	// ===== Basic elements =====
 	private String creatureName;
-	private Clade creatureType;
+	private Species creatureType;
 	
 	// ===== Constructors =====
 	public Creature() {
 		this.creatureName = null;
-		this.creatureType = Clade.MAMMAL;
+		this.creatureType = null;
 	}
 	
-	// ===== Getters and setter =====
+	// ===== Getters and setters =====
 	public String getCreatureName() {
-		return creatureName;
+		return this.creatureName;
 	}
 	
-	public Clade getCreatureType() {
-		return creatureType;
+	public Species getCreatureType() {
+		return this.creatureType;
 	}
 }
