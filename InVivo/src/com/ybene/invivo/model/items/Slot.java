@@ -30,6 +30,10 @@ public class Slot {
 	}
 	
 	// ===== Getters and setter =====
+	public Inventory getSlotInventory() {
+		return this.slotInventory;
+	}
+	
 	public Integer getSlotNumber() {
 		return this.slotNumber;
 	}
